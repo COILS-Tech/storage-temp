@@ -5,7 +5,7 @@
 "storage-account-name": {
     "type": "string",
     "metadata": {
-        "description": "description"
+        "description": "Enter a storage account name"
     }
 }
     },
@@ -19,7 +19,7 @@
     "type": "Microsoft.Storage/storageAccounts",
     "apiVersion": "2023-05-01",
     "tags": {
-        "displayName": "storageaccount1"
+        "displayName": "[parameters('storage-account-name')]"
     },
     "location": "[resourceGroup().location]",
     "kind": "StorageV2",
